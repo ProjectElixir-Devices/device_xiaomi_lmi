@@ -1,3 +1,6 @@
+# Camera
+persist.camera.gyro.disable=0
+
 # Charger
 ro.charger.enable_suspend=1
 

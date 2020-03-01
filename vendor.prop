@@ -97,7 +97,6 @@ persist.vendor.qcom.bluetooth.soc=hastings
 
 # Camera
 camera.disable_zsl_mode=true
-persist.camera.gyro.disable=0
 
 # CNE
 persist.vendor.cne.feature=1
