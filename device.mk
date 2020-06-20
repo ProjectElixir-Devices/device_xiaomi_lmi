@@ -242,7 +242,8 @@ PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
     media_codecs_performance_c2.xml \
     media_profiles_kona.xml \
-    media_profiles_V1_0.xml
+    media_profiles_V1_0.xml \
+    video_system_specs.json
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
