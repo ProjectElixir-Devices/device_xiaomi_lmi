@@ -33,6 +33,7 @@ allow xiaomiparts_app {
   sysfs_display
   sysfs_leds
   sysfs_thermal
+  sysfs_htsr
   vendor_sysfs_graphics
 }:file rw_file_perms;
 
