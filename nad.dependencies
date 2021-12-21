@@ -10,6 +10,6 @@
     "repository"   : "NusantaraROM-Devices/kernel_xiaomi_lmi",
     "target_path"  : "kernel/xiaomi/lmi",
     "clone-depth"  : "1",
-    "branch"       : "12"
+    "branch"       : "12-kona"
   }
 ]
