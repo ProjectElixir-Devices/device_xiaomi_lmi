@@ -5,8 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_lmi.mk
-
-COMMON_LUNCH_CHOICES := \
-    nad_lmi-userdebug \
-    nad_lmi-eng
+    $(LOCAL_DIR)/krypton_lmi.mk
