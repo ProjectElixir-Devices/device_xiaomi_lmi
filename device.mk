@@ -296,7 +296,8 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.qti
+    android.hardware.lights-service.qti \
+    lights.kona
 
 # Media
 PRODUCT_PACKAGES += \
