@@ -158,6 +158,9 @@ vendor/lib64/libbtnv.so|7973f6eeaa23f85709682e6fca66d589f514563d
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|52b83b6f371a49d866276aabc5d6bda4faa400b6
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|8d098cef4c4442f9aa2c64389be5eba32003dcce
 
+# Camera (postproc) - from LA.UM.9.14.r1-18400.02-LAHAINA.QSSI12.0
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682 
+
 # Camera
 vendor/etc/camera/102_SummerDay.png
 vendor/etc/camera/103_Fantasy.png
