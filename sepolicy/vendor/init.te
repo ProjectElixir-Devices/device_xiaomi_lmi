@@ -9,9 +9,3 @@ allow init vendor_sysfs_graphics:file rw_file_perms;
 
 allow init per_boot_file:file ioctl;
 allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
-
-allow init init:binder { call };
-allow init init:netlink_kobject_uevent_socket { read };
-allow init logcat_exec:file getattr;
-allow vendor_init cache_file:dir { remove_name write search };
-allow vendor_init cache_file:file unlink;
