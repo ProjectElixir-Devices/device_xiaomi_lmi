@@ -1,5 +1,15 @@
 # Bluetooth
 persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.library_name=libbluetooth_qti.so
+ro.bluetooth.wipower=false
+vendor.bluetooth.soc=hastings
 
 # Charger
 ro.charger.enable_suspend=1
