@@ -118,7 +118,7 @@ public final class DiracUtils {
         mDiracSound.setHifiMode(paramInt);
     }
 
-    protected static void setScenario(int paramInt) {
-        mDiracSound.setScenario(paramInt);
+    protected static void setScenario(int sceneInt) {
+        mDiracSound.setScenario(sceneInt);
     }
 }
