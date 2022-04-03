@@ -44,8 +44,8 @@
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?          u:object_r:vendor_sysfs_battery_supply:s0
 
 # HBM
-/sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_display:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable      u:object_r:sysfs_display:s0
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm                   u:object_r:sysfs_display:s0
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable      u:object_r:sysfs_display:s0
 
 # LEDs
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0064/leds(/.*)?                        u:object_r:sysfs_leds:s0
