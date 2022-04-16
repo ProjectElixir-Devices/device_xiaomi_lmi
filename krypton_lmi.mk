@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Inherit some common Krypton AOSP stuff.
 $(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 
+# Krypton AOSP build
+OFFICIAL_BUILD := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := krypton_lmi
 PRODUCT_DEVICE := lmi
