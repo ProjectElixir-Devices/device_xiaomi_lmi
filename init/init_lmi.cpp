@@ -18,15 +18,6 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "odm.",
-    "product.",
-    "system.",
-    "system_ext.",
-    "vendor.",
-};
-
 void property_override(char const prop[], char const value[], bool add = true) {
     prop_info *pi;
 
@@ -59,37 +50,68 @@ void load_dalvik_properties() {
     property_override("dalvik.vm.heapminfree", "8m");
 }
 
-void set_device_props(const std::string brand, const std::string device, const std::string model) {
-    const auto set_ro_product_prop = [](const std::string &source,
-                                        const std::string &prop,
-                                        const std::string &value) {
+std::vector<std::string> ro_props_default_source_order = {
+        "", "bootimage.", "odm.", "product.", "system.", "system_ext.", "vendor.",
+};
+
+void set_ro_build_prop(const std::string& prop, const std::string& value) {
+    for (const auto& source : ro_props_default_source_order) {
+        auto prop_name = "ro." + source + "build." + prop;
+        if (source == "")
+            property_override(prop_name.c_str(), value.c_str());
+        else
+            property_override(prop_name.c_str(), value.c_str(), false);
+    }
+};
+
+void set_ro_product_prop(const std::string& prop, const std::string& value) {
+    for (const auto& source : ro_props_default_source_order) {
         auto prop_name = "ro.product." + source + prop;
         property_override(prop_name.c_str(), value.c_str(), false);
-    };
-
-    for (const auto &source : ro_props_default_source_order) {
-        set_ro_product_prop(source, "brand", brand);
-        set_ro_product_prop(source, "device", device);
-        set_ro_product_prop(source, "model", model);
     }
-}
+};
 
 void vendor_load_properties() {
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
     std::string product = android::base::GetProperty("ro.boot.product.hardware.sku", "");
 
+    std::string model;
+    std::string device;
+    std::string fingerprint;
+    std::string description;
+    std::string mod_device;
+
     if (region == "CN") {
         if (product == "pro") {
-            set_device_props(
-                "Redmi", "lmipro", "Redmi K30 Pro Zoom Edition");
+        model = "Redmi K30 Pro Zoom Edition";
+        device = "lmipro";
+        fingerprint =
+                "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.4.0.RJKCNXM:user/release-keys";
+        description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
+        mod_device = "lmipro";
         } else {
-            set_device_props(
-                "Redmi", "lmi", "Redmi K30 Pro");
+        model = "Redmi K30 Pro";
+        device = "lmi";
+        fingerprint =
+                "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.5.4.0.RJKCNXM:user/release-keys";
+        description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
         }
     } else {
-        set_device_props(
-            "POCO", "lmi", "POCO F2 Pro");
+        model = "POCO F2 Pro";
+        device = "lmi";
+        fingerprint =
+                "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.3.0.RJKMIXM:user/release-keys";
+        description = "qssi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys";
     }
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    set_ro_product_prop("device", device);
+    set_ro_product_prop("model", model);
+    property_override("ro.build.description", description.c_str());
+    if (mod_device != "") {
+        property_override("ro.product.mod_device", mod_device.c_str());
+    }
+
     property_override("ro.boot.verifiedbootstate", "green");
 
     load_dalvik_properties();
