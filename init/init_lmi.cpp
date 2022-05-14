@@ -90,6 +90,7 @@ void vendor_load_properties() {
         set_device_props(
             "POCO", "lmi", "POCO F2 Pro");
     }
+    property_override("ro.boot.verifiedbootstate", "green");
 
     load_dalvik_properties();
 }
