@@ -85,26 +85,19 @@ void vendor_load_properties() {
         if (product == "pro") {
         model = "Redmi K30 Pro Zoom Edition";
         device = "lmipro";
-        fingerprint =
-                "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.4.0.RJKCNXM:user/release-keys";
         description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
         mod_device = "lmipro";
         } else {
         model = "Redmi K30 Pro";
         device = "lmi";
-        fingerprint =
-                "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.5.4.0.RJKCNXM:user/release-keys";
         description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
         }
     } else {
         model = "POCO F2 Pro";
         device = "lmi";
-        fingerprint =
-                "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.3.0.RJKMIXM:user/release-keys";
         description = "qssi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys";
     }
 
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     property_override("ro.build.description", description.c_str());
