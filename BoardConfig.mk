@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2021 The LineageOS Project
 #
@@ -48,6 +49,9 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)
 TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := azure
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu
+TARGET_KERNEL_CROSS_COMPILE_COMPAT_PREFIX := arm-linux-gnueabi-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
 TARGET_KERNEL_CONFIG := vendor/lmi_user_defconfig
 
