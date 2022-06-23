@@ -53,7 +53,7 @@ TARGET_KERNEL_CLANG_VERSION := azure
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu
 TARGET_KERNEL_CROSS_COMPILE_COMPAT_PREFIX := arm-linux-gnueabi-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
-TARGET_KERNEL_CONFIG := vendor/lmi_user_defconfig
+TARGET_KERNEL_CONFIG := lmi_user_defconfig
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
