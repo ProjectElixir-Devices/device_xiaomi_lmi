@@ -1,2 +1,6 @@
 type sysfs_display, sysfs_type, fs_type;
 allow system_app sysfs_display:file rw_file_perms;
+allow system_app vendor_sysfs_graphics:dir { search };
+allow system_app vendor_sysfs_graphics:file { getattr open read };
+
+r_dir_file(system_app, vendor_sysfs_graphics)
