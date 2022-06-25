@@ -5,4 +5,5 @@ type persist_camera_file, vendor_persist_type, file_type;
 type thermal_data_file, data_file_type, file_type;
 
 # Nodes
+type sysfs_display, sysfs_type, fs_type;
 type sysfs_touchpanel, sysfs_type, fs_type;
