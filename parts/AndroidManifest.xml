@@ -37,7 +37,8 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true"
         android:defaultToDeviceProtectedStorage="true"
-        android:directBootAware="true">
+        android:directBootAware="true"
+        android:theme="@style/Theme.SubSettingsBase">
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -53,8 +54,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
-            android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/clear_speaker_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -68,8 +68,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
-            android:label="@string/dirac_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/dirac_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -111,14 +110,12 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/ambient_display_title">
         </activity>
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
-            android:label="@string/popup_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/popup_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -138,8 +135,7 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
-            android:label="@string/thermal_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/thermal_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -161,8 +157,7 @@
 
         <activity
             android:name=".display.DisplaySettingsActivity"
-            android:label="@string/display_settings_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/display_settings_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -180,8 +175,7 @@
 
         <activity
             android:name=".touchsampling.TouchSamplingSettingsActivity"
-            android:label="@string/htsr_enable_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/htsr_enable_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
