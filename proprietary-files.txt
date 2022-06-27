@@ -20,19 +20,14 @@ vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 
 # ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+
+# ADSP - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+vendor/bin/adsprpcd|2886f08eb674b6ced8bf6e9bb54761094ee7b74c
+vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
+vendor/lib/libadsprpc.so|43b48ee981411210b798187aba937f06bc705bcd
+vendor/lib64/libadsp_default_listener.so|33f44a23edf2cf734658e762a19dfc207b1921b8
+vendor/lib64/libadsprpc.so|b0f1a52cea3c85fabfd4f8ecb32f74c1cc727de6
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -460,17 +455,23 @@ vendor/lib64/libmivendor_module_motor.so
 vendor/lib64/mi.motor.daemon.so
 
 # CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libfastcrc.so
-vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
+
+# CDSP - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+vendor/bin/cdsprpcd|2257675e907dce9ed4a328d66caae44096221bb8
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsprpc.so|b2b0d4082ba33d84b7e5e4de686cc034990aa190
+vendor/lib/libmdsprpc.so|443f3b13568b1b3d10c181b5a7b8fd6df07feda4
+vendor/lib/libsdsprpc.so|9ff8c835783a6e48013f1d7103b752392774192d
+vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
+vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
+vendor/lib64/libcdsp_default_listener.so|23a8dff8e8ab66d23c5de9aa3574dd3c64d113b4
+vendor/lib64/libcdsprpc.so|4ea039b67cec21e35e396cb7ff62f3caa873393d
+vendor/lib64/libmdsprpc.so|7e4146cca5b7a00d3d1be0fb10a2886e0d6cba84
+vendor/lib64/libsdsprpc.so|d9965780fbc36931d9b8bd24a1e966a66896df9e
+vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
 
 # Charger
 vendor/bin/batterysecret
@@ -648,6 +649,13 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 # DRM (Widevine L1)
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
+
+# DSP service - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+vendor/bin/dspservice|081468b9bc63cab921ac1e37a95eb93bd16e23f9
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|0be8b21f30c8aba3381bb1e9279ba0ae9b730c60
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|e92a9bf499d31770f73cc35e56c6a9d77285ba7c
 
 # ESE - from LA.UM.9.12.r1-14100.01-SMxx50.QSSI13.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|040212c2c39ca3f2090291dd3a7f49979e5003df
