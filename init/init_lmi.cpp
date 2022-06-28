@@ -85,17 +85,17 @@ void vendor_load_properties() {
         if (product == "pro") {
         model = "Redmi K30 Pro Zoom Edition";
         device = "lmipro";
-        description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
+        description = "qssi-user 12 RKQ1.211001.001 V13.0.4.0.SJKCNXM release-keys";
         mod_device = "lmipro";
         } else {
         model = "Redmi K30 Pro";
         device = "lmi";
-        description = "qssi-user 11 RKQ1.200826.002 V12.5.4.0.RJKCNXM release-keys";
+        description = "qssi-user 12 RKQ1.211001.001 V13.0.4.0.SJKCNXM release-keys";
         }
     } else {
         model = "POCO F2 Pro";
         device = "lmi";
-        description = "qssi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys";
+        description = "qssi-user 12 RKQ1.211001.001 V13.0.1.0.SJKMIXM release-keys";
     }
 
     set_ro_product_prop("device", device);
