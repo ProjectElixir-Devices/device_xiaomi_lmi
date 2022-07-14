@@ -749,6 +749,15 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
+# GPS (configs)
+vendor/etc/apdr.conf
+vendor/etc/flp.conf
+vendor/etc/gps.conf
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
+vendor/etc/xtwifi.conf
+
 # Graphics
 -vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk
 vendor/lib/egl/eglSubDriverAndroid.so
