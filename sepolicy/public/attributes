@@ -1,3 +1,5 @@
-hal_attribute_nad(mlipay)
+attribute hal_mlipay;
+attribute hal_mlipay_client;
+attribute hal_mlipay_server;
 hal_attribute_nad(motor)
 hal_attribute_nad(touchfeature)

@@ -32,7 +32,7 @@
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_lmi                                 u:object_r:hal_vibrator_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                                         u:object_r:hal_motor_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                                  u:object_r:hal_touchfeature_default_exec:s0
-/vendor/bin/mlipayd@1\.1                                                                            u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/mlipayd@1.1                                 u:object_r:hal_mlipay_default_exec:s0
 
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?          u:object_r:vendor_sysfs_battery_supply:s0
