@@ -47,9 +47,12 @@ on init
 on post-fs-data
     mkdir /data/vendor/mac_addr 0770 system wifi
     mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/mqsas_common 0771 system system
 
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
+
+    chown gps system /dev/ttyHS1
 
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
@@ -59,6 +62,7 @@ on post-fs-data
 
 on boot
     chown system system /sys/class/touch/touch_dev/palm_sensor
+    chown system system /sys/class/touch/touch_dev/partial_diff_data
 
     chown system system /sys/class/drm/card0-DSI-1/panel_info
     chmod 0444 /sys/class/drm/card0-DSI-1/panel_info
@@ -80,6 +84,9 @@ on boot
     chown system system /sys/class/leds/red/brightness
 
     chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/balance_mode
+
+    write /sys/block/sda/queue/wbt_lat_usec 75000
 
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
