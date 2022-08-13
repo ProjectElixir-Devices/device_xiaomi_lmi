@@ -830,7 +830,7 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a585
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # IFAA
--vendor/app/IFAAService/IFAAService.apk
+-vendor/app/IFAAService/IFAAService.apk|d9099c92e6da4dcee0f1f1715f4d0249ecd42d06
 
 # IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
