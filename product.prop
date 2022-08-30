@@ -8,6 +8,9 @@ audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 ro.af.client_heap_size_kbyte=7168
 
+# Display
+debug.sf.frame_rate_multiple_threshold=81
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
