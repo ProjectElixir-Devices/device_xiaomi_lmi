@@ -161,6 +161,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.usb</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>com.dsi.ant</name>
         <version>1.0</version>
         <interface>
