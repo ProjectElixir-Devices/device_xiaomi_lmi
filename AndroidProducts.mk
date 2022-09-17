@@ -5,8 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lmi.mk
+    $(LOCAL_DIR)/nad_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lmi-userdebug \
-    lineage_lmi-eng
+    nad_lmi-eng \
+    nad_lmi-user \
+    nad_lmi-userdebug
