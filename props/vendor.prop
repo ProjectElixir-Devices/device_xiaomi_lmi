@@ -78,6 +78,7 @@ vendor.qcom.bluetooth.soc=hastings
 
 # Camera
 camera.disable_zsl_mode=true
+vendor.camera.hal1.packagelist=com.whatsapp,com.whatsapp.w4b,com.facebook.orca,com.instagram.android
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
