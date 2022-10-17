@@ -347,6 +347,8 @@ vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
 vendor/lib64/libalLDC.so
+vendor/lib64/libarcdualcamsat.so
+vendor/lib64/libarcmulticamsat.so
 vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
@@ -387,6 +389,7 @@ vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
+vendor/lib64/libflaw.so
 vendor/lib64/libfocus.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libhdrdynamic.so
@@ -430,6 +433,7 @@ vendor/lib64/libsnpe_dsp_domains.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libst_soft_isp_calc_exposure_shared.so
 vendor/lib64/libst_soft_isp_shared.so
+vendor/lib64/libsupermoon.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libswregistrationalgo.so
