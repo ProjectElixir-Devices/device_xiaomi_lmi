@@ -198,7 +198,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lmi
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lmi \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
