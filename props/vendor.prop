@@ -203,6 +203,9 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8250
 
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # USB
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
