@@ -211,7 +211,11 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lmi \
+    sensors.udfps.lmi \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Gatekeeper
 PRODUCT_PACKAGES += \

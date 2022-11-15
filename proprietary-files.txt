@@ -1356,7 +1356,6 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/tsl2560_back.json
 vendor/etc/sensors/config/tsl2560_dup.json
 vendor/etc/sensors/config/tsl2560_pol.json
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/nanopb.proto
 vendor/etc/sensors/proto/sns_accel_cal.proto
