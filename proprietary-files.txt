@@ -450,10 +450,10 @@ vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera
 vendor/lib64/camera/components/com.mi.node.watermark.so|54fb1fd0a77b6886658e0853fb17c0b81df619b4
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|8629ddc55445116852140a88c6d272683ac6bd49
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
