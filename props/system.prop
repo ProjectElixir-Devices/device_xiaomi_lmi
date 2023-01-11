@@ -21,11 +21,6 @@ debug.sf.disable_backpressure=1
 persist.demo.hdmirotationlock=false
 qemu.sf.lcd_density=440
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
