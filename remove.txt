@@ -1,3 +1,6 @@
 device/xiaomi
 kernel/xiaomi
 vendor/xiaomi
+
+# Patched source repositories
+frameworks/base
