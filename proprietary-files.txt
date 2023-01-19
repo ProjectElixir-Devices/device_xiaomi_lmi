@@ -1540,7 +1540,7 @@ vendor/firmware/aw8697_rtp_1.bin
 vendor/bin/cnss-daemon
 vendor/bin/nv_mac
 
-# WiFi Display - from LA.UM.9.12.r1-14400-SMxx50.0
+# WiFi Display (System) - from LA.UM.9.12.r1-14400-SMxx50.0
 -framework/WfdCommon.jar|206f22c57ae2ac37ef9fd1d34a0d7cb53df87d44
 system_ext/bin/wfdservice|55ef75a62a6a3a92da250d5666c27ceb9c6c7290
 system_ext/bin/wfdservice64|641970238406ef0711576d3e949f83d3cdf07468
@@ -1592,7 +1592,9 @@ system_ext/lib64/libwfduibcsrcinterface.so|7de5b64d41dac6e7af97470a4fb231d2417ae
 -system_ext/priv-app/WfdService/WfdService.apk|4f1b14e31568194a332f8c31ea1b17312836f9e2
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|3f4e4e019a281653a9154d7ac7df26ede26f59da
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|af90a11bc04cbabc06de96158c53ad7910091dd3
-vendor/bin/wifidisplayhalservice|f887a8806cf686502a4a0d1929149b470db650f7
+
+# WiFi Display (Vendor) - LA.UM.9.12.r1-15100-SMxx50.QSSI13.0
+vendor/bin/wifidisplayhalservice|36bddae1febbee1bb53a80646d17c0fe36199757
 vendor/bin/wfdvndservice|194bb3aef5237f05d0c8fab2c88846147a6cc55a
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|576ce4393b7746b77a230745aa9e9ee3bd31b17d
 vendor/etc/init/wfdvndservice.rc|42e28fb8e0bf00620d7b9939b5bd3164ca671033
@@ -1610,9 +1612,9 @@ vendor/lib/libmmrtpdecoder_proprietary.so|227a26b9ec9ee6f2dc95de47b713b215e8b6c9
 vendor/lib/libmmrtpencoder_proprietary.so|d0aec32b8e565912ecc475bad40ed626ac1ee04d
 vendor/lib/libwfdcodecv4l2_proprietary.so|c7ad50efcc442e0cc8a3ee74b1e3e7e69062c41a
 vendor/lib/libwfdcommonutils_proprietary.so|069de88af766248366b37acf7bee10dd38615bcf
-vendor/lib/libwfdconfigutils_proprietary.so|e8461c2fd3d2e2554f8aa8c3a16eb67cff5c1553
-vendor/lib/libwfddisplayconfig_proprietary.so|af05c10fbc175d6826b8b2c37eef799dcacada04
-vendor/lib/libwfdhdcpcp.so|0265a590f982882dff6a1f6ded4c52c77bc9613f
+vendor/lib/libwfdconfigutils_proprietary.so|3e3ed1fa9e6d30e7ba61db2e12b1f6aee9a74435
+vendor/lib/libwfddisplayconfig_proprietary.so|f24b3956a71df1f9602a0cfd486616e4f79c01bf
+vendor/lib/libwfdhdcpcp.so|e725c8c4999f0fe71b2db94d7fa0cbbba574cf51
 vendor/lib/libwfdhdcpservice_proprietary.so|4afea7f26d83a2d9816b832d26d339f4e8183ede
 vendor/lib/libwfdmminterface_proprietary.so|a63d2c309ec5d86f0db036eaf23ea1ea400e6978
 vendor/lib/libwfdmmservice_proprietary.so|a2e5a10e37319e5afe16f3d0235be365b4acecc2
@@ -1629,19 +1631,13 @@ vendor/lib/libwfduibcsrc_proprietary.so|11f1152f0da71d978a17a66a883c65763dd08c1e
 vendor/lib/libwfduibcsrcinterface_proprietary.so|bfd97b6d662657234774a3c9c87f8a0670f92dd9
 vendor/lib/libwfdutils_proprietary.so|67df61c8ed10620bd5e2059720903627762df6ec
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|c08e1803c3089ee5da37b0a56eb9c2bdf9aeb4b2
-vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|fefea0a3279f850e562cfaaf4fe3b24af1dd3994
+vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|380ad98e1752662d1a2e2f6105fbcc8c28557d2c
 vendor/lib64/libhdcp1prov.so|b72bd7c5341598c7ee1462c8272620e4bc100a8a
 vendor/lib64/libhdcp2p2prov.so|311ee368645dbfa4638982a23545e9b02e2047ef
 vendor/lib64/libhdcpsrm.so|e419c107da4919b898a6917396e8930ebc9de5d0
 vendor/lib64/libmiracast.so|8a06075a193d9bdb28d29f2d4bcd05b02b66c312
 vendor/lib64/libmm-hdcpmgr.so|4ad37a8ca06f826558898aaf53f3d0abaeaab9e0
 vendor/lib64/libmmosal.so|60b7a94d6cd73c6d5be0e76dd503179adafd79a7
-vendor/lib64/libwfddisplayconfig_proprietary.so|ee93c1cf0ac824f357724f9b88c45388cf0e5087
-vendor/lib64/libwfdhdcpcp.so|23a3b97875323c0a8031e40f2d29bef6fb625c43
+vendor/lib64/libwfddisplayconfig_proprietary.so|cb6f8ba09152ed14db09b2307cc9ac93340e325c
+vendor/lib64/libwfdhdcpcp.so|12157c0400e253f8f45b9b009c8c12c13950ae60
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|f1b73c3461d099c162168cf9c603a8c2ab955dd0
-system_ext/lib64/libwfdavenhancements.so|5233d1ab1d7619db79aadf9a4ead17a5824cf6fa
-system_ext/lib64/libwfdmmsrc_system.so|1457a5ac2d41b0c6776366cec52071ddcf459639
-system_ext/lib64/libwfdservice.so|1439a8d305c9f85a79eec400811cf34fbdc9d350
-vendor/bin/wfdvndservice|194bb3aef5237f05d0c8fab2c88846147a6cc55a
-vendor/etc/init/wfdvndservice.rc|42e28fb8e0bf00620d7b9939b5bd3164ca671033
-vendor/etc/seccomp_policy/wfdvndservice.policy|b46f0c22a1f9b65c6750205e161c0a3f84ac716b
