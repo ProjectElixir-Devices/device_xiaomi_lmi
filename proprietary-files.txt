@@ -1616,7 +1616,6 @@ vendor/lib/libwfdcodecv4l2_proprietary.so|c7ad50efcc442e0cc8a3ee74b1e3e7e69062c4
 vendor/lib/libwfdcommonutils_proprietary.so|069de88af766248366b37acf7bee10dd38615bcf
 vendor/lib/libwfdconfigutils_proprietary.so|3e3ed1fa9e6d30e7ba61db2e12b1f6aee9a74435
 vendor/lib/libwfddisplayconfig_proprietary.so|f24b3956a71df1f9602a0cfd486616e4f79c01bf
-vendor/lib/libwfdhdcpcp.so|e725c8c4999f0fe71b2db94d7fa0cbbba574cf51
 vendor/lib/libwfdhdcpservice_proprietary.so|4afea7f26d83a2d9816b832d26d339f4e8183ede
 vendor/lib/libwfdmminterface_proprietary.so|a63d2c309ec5d86f0db036eaf23ea1ea400e6978
 vendor/lib/libwfdmmservice_proprietary.so|a2e5a10e37319e5afe16f3d0235be365b4acecc2
@@ -1643,3 +1642,6 @@ vendor/lib64/libmmosal.so|60b7a94d6cd73c6d5be0e76dd503179adafd79a7
 vendor/lib64/libwfddisplayconfig_proprietary.so|cb6f8ba09152ed14db09b2307cc9ac93340e325c
 vendor/lib64/libwfdhdcpcp.so|12157c0400e253f8f45b9b009c8c12c13950ae60
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so|f1b73c3461d099c162168cf9c603a8c2ab955dd0
+
+# WiFi Display (Vendor) - LA.UM.9.12.r1-14400-SMxx50.0
+vendor/lib/libwfdhdcpcp.so|0265a590f982882dff6a1f6ded4c52c77bc9613f
