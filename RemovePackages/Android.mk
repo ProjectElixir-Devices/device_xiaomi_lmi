@@ -8,6 +8,7 @@ LOCAL_OVERRIDES_PACKAGES += Chrome Chrome-Stub Drive Maps PrebuiltGmail Videos Y
 LOCAL_OVERRIDES_PACKAGES := Email Exchange Exchange2 UnifiedEmail PhotoTable Eleven
 LOCAL_OVERRIDES_PACKAGES += PlayAutoInstallConfig SafetyHubPrebuilt RecorderPrebuilt
 LOCAL_OVERRIDES_PACKAGES += TipsPrebuilt Aperture
+LOCAL_OVERRIDES_PACKAGES += AmbientSensePrebuilt DevicePolicyPrebuilt PixelLiveWallpaperPrebuilt SoundAmplifierPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
