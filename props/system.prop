@@ -28,6 +28,9 @@ debug.sf.disable_backpressure=1
 persist.demo.hdmirotationlock=false
 qemu.sf.lcd_density=440
 
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
