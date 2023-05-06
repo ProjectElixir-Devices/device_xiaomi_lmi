@@ -16,7 +16,6 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit some common Project Elixir stuff.
 ELIXIR_BUILD_TYPE := OFFICIAL
-ELIXIR_MAINTAINER := 家-|ZenkaBestia
 EXTRA_UDFPS_ANIMATIONS := true
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
