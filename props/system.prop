@@ -1,6 +1,13 @@
 # Audio
+af.resampler.quality=7
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
+persist.bluetooth.sbc_hd_higher_bitrate=1
+ro.audio.usb.period_us=20375
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.tbwcheat=0
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
 # Bluetooth
