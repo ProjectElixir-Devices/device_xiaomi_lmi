@@ -49,6 +49,12 @@ function lib_to_package_fixup_vendor_variants() {
         com.qualcomm.qti.dpm.api@1.0)
            echo "${1}_vendor"
             ;;
+        libOmxCore | \
+            libgrallocutils | \
+            libwfdcommonutils_proprietary | \
+            libwfdmmservice_proprietary | \
+            libwfdutils_proprietary | \
+            libwpa_client) ;;
         *)
             return 1
     esac
