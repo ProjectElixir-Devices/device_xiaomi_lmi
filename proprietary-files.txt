@@ -770,7 +770,7 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/cacert_location.pem
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/lib/libminksocket.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
@@ -1562,7 +1562,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
--vendor/lib/libfastcvopt.so
+vendor/lib/libfastcvopt.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libscveCommon.so
 vendor/lib/libscveObjectSegmentation_stub.so
@@ -1570,7 +1570,7 @@ vendor/lib/libscveObjectSegmentation.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libscveObjectTracker.so
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveObjectSegmentation_stub.so
@@ -1613,8 +1613,8 @@ vendor/etc/thermal-per-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 
 # Limits HAL
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
