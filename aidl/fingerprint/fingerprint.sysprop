@@ -1,0 +1,24 @@
+# fingerprint.sysprop
+# module becomes static class (Java) / namespace (C++) for serving API
+module: "android.fingerprint.xiaomi.FingerprintHalProperties"
+owner: Vendor
+
+# sensor modules (default: goodix_fod,goodix_fod6)
+#    module1,module2
+prop {
+    prop_name: "persist.vendor.fingerprint.sensor_modules"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    api_name: "sensor_modules"
+}
+
+# sensor location
+#    <x>|<y>|<radius> in pixel
+prop {
+    prop_name: "persist.vendor.fingerprint.sensor_location"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    api_name: "sensor_location"
+}
