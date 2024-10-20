@@ -44,7 +44,8 @@ function lib_to_package_fixup_vendor_variants() {
     fi
     case "$1" in
         vendor.qti.hardware.qccsyshal@1.0 | \
-        vendor.qti.hardware.qccvndhal@1.0)
+        vendor.qti.hardware.qccvndhal@1.0 | \
+        vendor.qti.imsrtpservice@3.0)
            echo "${1}_vendor"
             ;;
         *)
