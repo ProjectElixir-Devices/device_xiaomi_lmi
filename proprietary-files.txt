@@ -74,9 +74,9 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.lmi.so
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.lmi.so;FIX_SONAME
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_lmi.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_lmi.so;FIX_SONAME
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
@@ -560,7 +560,7 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Consumer IR
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so;FIX_SONAME
 
 # Display Calibration
 vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml|0fb211bd5e5d5152e5f708c50054ce261e5ea061
@@ -714,8 +714,8 @@ vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.kona.so
-vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.kona.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.kona.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.kona.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgf_hal6.so
 
