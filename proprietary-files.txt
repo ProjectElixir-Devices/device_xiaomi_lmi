@@ -200,16 +200,6 @@ vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
 vendor/etc/camera/vidhance_calibration
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxfacialfeatures.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxifestriping.so
-vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxncs.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b.so
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b_st.so
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_ov08a10_gt24p64.so
