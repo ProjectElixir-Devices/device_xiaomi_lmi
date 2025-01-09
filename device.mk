@@ -126,6 +126,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    gralloc.qcom \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
     libqdMetaData \
