@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/lmi
 
+# A/B
+AB_OTA_UPDATER := false
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
