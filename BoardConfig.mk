@@ -116,6 +116,10 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-l
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
 TARGET_KERNEL_CONFIG := lmi_defconfig
 
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
