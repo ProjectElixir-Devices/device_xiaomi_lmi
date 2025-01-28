@@ -37,6 +37,5 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lmi-user 12 RKQ1.211001.001 V14.0.1.0.SJKCNXM release-keys"
-
-BUILD_FINGERPRINT := Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.5.0.SJKCNXM:user/release-keys
+    BuildDesc="lmi-user 12 RKQ1.211001.001 V14.0.1.0.SJKCNXM release-keys" \
+    BuildFingerprint=Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.5.0.SJKCNXM:user/release-keys
