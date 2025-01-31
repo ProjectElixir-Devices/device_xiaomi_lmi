@@ -92,8 +92,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
-$(call inherit-product, vendor/xiaomi/lmi-miuicamera/config.mk)
-
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
@@ -108,9 +106,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libpiex_shim
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.product.mod_device=lmi_global
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -402,6 +397,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/hiddenapi-package-allowlist-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-allowlist.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+# Prebuilt Apps
+PRODUCT_PACKAGES += \
+    CameraGo
 
 # Preopt critical applications
 PRODUCT_DEXPREOPT_SPEED_APPS += \
