@@ -33,6 +33,6 @@
 
     <!-- Recognizing fingerprint animation -->
     <dimen name="udfps_animation_offset">37dp</dimen>
-    <dimen name="udfps_animation_size">150dp</dimen>
+    <dimen name="udfps_animation_size">240dp</dimen>
 
 </resources>
