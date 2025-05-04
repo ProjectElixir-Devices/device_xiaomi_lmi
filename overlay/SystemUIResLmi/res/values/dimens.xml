@@ -32,7 +32,7 @@
     <dimen name="physical_power_button_center_screen_location_y">900px</dimen>
 
     <!-- Recognizing fingerprint animation -->
-    <dimen name="udfps_animation_offset">35dp</dimen>
+    <dimen name="udfps_animation_offset">37dp</dimen>
     <dimen name="udfps_animation_size">150dp</dimen>
 
 </resources>
