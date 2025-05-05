@@ -41,6 +41,9 @@
 /mnt/vendor/persist/fpc(/.*)?                               u:object_r:fingerprint_vendor_data_file:s0
 /mnt/vendor/persist/goodix(/.*)?                            u:object_r:fingerprint_vendor_data_file:s0
 
+# Firmware
+/(vendor|system/vendor)/firmware(/.*)?                      u:object_r:vendor_firmware_file:s0
+
 # Graphics
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param    u:object_r:vendor_sysfs_graphics:s0
 
