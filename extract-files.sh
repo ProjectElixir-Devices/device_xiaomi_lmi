@@ -80,6 +80,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             ${PATCHELF} --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.lmi.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s|/vendor/lib/liba2dpoffload\.so|liba2dpoffload_lmi\.so\x00\x00\x00\x00\x00\x00\x00\x00|g" "${2}"
+            ;;
         *)
             return 1
             ;;
