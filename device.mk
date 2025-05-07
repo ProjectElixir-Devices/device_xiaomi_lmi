@@ -239,18 +239,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
 
 PRODUCT_PACKAGES += \
-    media_codecs.xml \
     media_codecs_c2.xml \
-    media_codecs_kona.xml \
-    media_codecs_performance.xml \
     media_codecs_performance_c2.xml \
-    media_codecs_performance_kona.xml \
-    media_codecs_performance_kona_vendor.xml \
-    media_profiles.xml \
     media_profiles_kona.xml \
-    media_profiles_vendor.xml \
-    media_profiles_V1_0.xml \
-    system_properties.xml
+    media_profiles_V1_0.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
@@ -298,10 +290,7 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+    libOmxCore
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosp
