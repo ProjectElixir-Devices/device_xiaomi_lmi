@@ -16,3 +16,14 @@ cc_binary {
         "main.cpp",
     ],
 }
+
+cc_library_shared {
+    name: "lights.kona",
+    srcs: ["lights.c"],
+    shared_libs: ["liblog"],
+    header_libs: ["libhardware_headers"],
+    cflags: ["-DLOG_TAG=\"qdlights\""],
+    relative_install_path: "hw",
+    compile_multilib: "both",
+    vendor: true,
+}
