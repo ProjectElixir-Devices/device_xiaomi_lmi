@@ -286,6 +286,8 @@ PRODUCT_PACKAGES += \
     libnfc-nxp.conf
 
 # OMX
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
