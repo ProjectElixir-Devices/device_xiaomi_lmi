@@ -196,6 +196,8 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_lmi)
+
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.ramdisk \

@@ -79,7 +79,6 @@ DEVICE_MATRIX_FILE := \
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lmi
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 
 # Kernel
