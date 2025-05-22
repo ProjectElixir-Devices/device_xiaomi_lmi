@@ -159,6 +159,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250
 
 # Fingerprint
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.xiaomi_lmi)
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi_lmi \
     sensors.udfps.lmi \
