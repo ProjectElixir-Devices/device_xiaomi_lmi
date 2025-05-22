@@ -116,9 +116,6 @@ override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
 # Media
 TARGET_USES_ION := true
 
