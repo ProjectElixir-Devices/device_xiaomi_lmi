@@ -32,5 +32,5 @@ TARGET_DISABLE_EPPE := true
 
 # Inherit some Project Elixir stuff.
 ELIXIR_BUILD_TYPE := OFFICIAL
-
+WITH_GMS := true
 EXTRA_UDFPS_ANIMATIONS := true
